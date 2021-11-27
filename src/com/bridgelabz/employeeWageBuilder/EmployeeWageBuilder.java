@@ -11,13 +11,14 @@ public class EmployeeWageBuilder {
 	public static void main(String[] args) {
 		EmployeeWageBuilder employeewage = new EmployeeWageBuilder();
 		employeewage.welcome();
-		employeewage.emopDailyWage();
+		employeewage.totalEmpWage();
 	}
 
 	public void welcome() {
-	System.out.println("Welcome to Employee Wage Computation Program on Master Branch");
+		System.out.println("Welcome to Employee Wage Computation Program on Master Branch");
 	}
-	public void emopDailyWage(){
+
+	public void totalEmpWage() {
 		int empHrs = 0;
 		int totalEmpHrs = 0;
 		int totalWorkingDays = 0;
@@ -44,5 +45,4 @@ public class EmployeeWageBuilder {
 		totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
 		System.out.println("Total Employee Wage: " + totalEmpWage);
 	}
-	
 }
